@@ -1,7 +1,6 @@
 import { useContext, useState } from "react"
 import { StoreIcon } from "../Icons"
 import { Notification } from "./Notification"
-//import loginService from "../services/login"
 import { users as userJson } from "../mocks/users.json"
 import { useNavigate } from "react-router-dom"
 import { UserContext } from "../context/user"
