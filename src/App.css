@@ -1,0 +1,40 @@
+* {
+  margin: 0 ;
+  padding: 0;
+  text-align: center;
+  font-family: "Motiva Sans";
+}
+
+body{
+  line-height: 1.6;
+  font-family: "Motiva Sans", Sans-serif;
+  background-color: #2A475E;
+  color: #fff;
+  background: radial-gradient(63.94% 1024px at 50% 200px, #244372 0%, #161A1F 100%);
+  height: auto;
+}
+
+
+
+.footer {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  text-align: left;
+  background: rgba(0, 0, 0, .7);
+  padding: 8px 24px;
+  border-radius: 32px;
+  opacity: .95;
+  backdrop-filter: blur(8px);
+}
+
+.footer span {
+  font-size: 14px;
+  color: #09f;
+  opacity: .8;
+}
+
+.footer h4, .footer h5 {
+  margin: 0;
+  display: flex;
+}

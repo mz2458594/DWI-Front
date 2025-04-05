@@ -1,0 +1,55 @@
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    width: auto;
+    justify-content: center;
+}
+
+.title {
+    width: auto;
+    text-align: left;
+}
+
+
+.editOptions {
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: auto;
+}
+
+.blockOptions {
+    border-bottom: 1px solid white;
+    display: flex;
+    gap: 300px;
+    width: auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.userAtributtes{
+    width: 20%;
+}
+
+.editButton{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 99px;
+    width: 178px;
+    height: auto;
+    align-items: center;
+}
+
+.editButton a{
+    border: 1px solid green;
+    border-radius: 99px;
+    width: 100%;
+
+}

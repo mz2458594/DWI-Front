@@ -1,0 +1,48 @@
+
+.sectionLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    gap: 20px;
+    height: 656px;
+    background: radial-gradient(rgba(24, 26, 33, 0) 0%, #181A21 100%) fixed no-repeat, url(https://store.fastly.steamstatic.com/public/shared/images/joinsteam/new_login_bg_strong_mask.jpg) center top no-repeat, #181A21;;
+}
+
+.login {
+    color: #1999ff;
+
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: #181a21;
+    border-radius: 10px;
+    position: relative;
+    width: 769px;
+    height: 338px;
+}
+
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    gap: 16px;
+    align-items: center;
+}
+
+.loginForm button{
+    width: 270px;
+    position: relative;
+    background: linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%);
+}
+
+.loginForm input{
+    width: 466px;
+    position: relative;
+    border-radius: none;
+}
