@@ -26,16 +26,18 @@ let DEFAULT = [
 ]
 
 
-const DEFAULT_STATE = await fetch('http://localhost:3000/users', {
-    method: 'GET',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-})
-    .then(res => res.json())
-    .then((data) => {
-        return data
-    })
+// NO BORRAR QUE VA A SERVIR PARA CUANDO TENGAMOS LO DE SPRING JAVA
+
+// const DEFAULT_STATE = await fetch('http://localhost:3000/users', {
+//     method: 'GET',
+//     headers: {
+//         'Content-Type': 'application/json'
+//     },
+// })
+//     .then(res => res.json())
+//     .then((data) => {
+//         return data
+//     })
 
 
 const DEFAULTS = []
@@ -44,7 +46,7 @@ const DEFAULTS = []
 
 export const UserSlice = createSlice({
     name: "users",
-    initialState: DEFAULT_STATE,
+    initialState: DEFAULT,
     reducers: {
         addUsers: (state, action) => {
             state.push(...action.payload)

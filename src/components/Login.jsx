@@ -18,39 +18,41 @@ export const Login = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault()
-        // const userFound = userJson.find(user => user.username === username && user.password === password)
+        const userFound = userJson.find(user => user.username === username && user.password === password)
 
-        // if (userFound) {
-        //     setUser(userFound)
-        //     navigate("/")
-        // } else {
-        //     setError('Wrong credentials')
-        //     setTimeout(() => {
-        //         setError(null)
-        //     }, 5000)
-        // }
+        if (userFound) {
+            setUser(userFound)
+            navigate("/")
+        } else {
+            setError('Wrong credentials')
+            setTimeout(() => {
+                setError(null)
+            }, 5000)
+        }
 
 
-        fetch('http://localhost:3000/users/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ username, password })
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data.user.username)
-                setUser(data.user)
-                navigate("/")
-            })
-            .catch(error => {
-                console.error(error)
-                setError('Wrong credentials')
-                setTimeout(() => {
-                    setError(null)
-                }, 5000)
-            })
+        // NO BORRAR QUE VA A SERVIR PARA CUANDO TENGAMOS LO DE SPRING JAVA
+
+        // fetch('http://localhost:3000/users/login', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify({ username, password })
+        // })
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         console.log(data.user.username)
+        //         setUser(data.user)
+        //         navigate("/")
+        //     })
+        //     .catch(error => {
+        //         console.error(error)
+        //         setError('Wrong credentials')
+        //         setTimeout(() => {
+        //             setError(null)
+        //         }, 5000)
+        //     })
 
         setUsername('')
         setPassword('')
