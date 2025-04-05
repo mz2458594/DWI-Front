@@ -1,9 +1,15 @@
 URGENTE
 
-Para ejecutar el proyecto
+PARA CLONAR EL PROYECTO (comandos en la terminal)
 
-cd DWI-Front
+git clone https://github.com/mz2458594/DWI-Front.git
 
-npm install ------> solo la primera vez que inicies el proyecto
 
-npm run dev
+
+PARA EJECUTAR EL PROYECTO (comandos en la terminal)
+
+1) cd DWI-Front
+
+2) npm install ------> solo la primera vez que inicies el proyecto
+
+3) npm run dev
